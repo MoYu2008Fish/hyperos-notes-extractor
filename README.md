@@ -49,7 +49,7 @@ python3 hyperos_notes_extract.py
 python3 hyperos_notes_extract.py -o ~/Documents/Notes
 
 # 解析已有备份（zip 或 .bak）
-python3 hyperos_notes_extract.py --from-backup ~/Downloads/20261022_145603.zip
+python3 hyperos_notes_extract.py --from-backup ~/Downloads/<备份时间>.zip
 ```
 
 ### 输出结构
