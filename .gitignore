@@ -1,0 +1,21 @@
+# 导出的个人笔记与附件，绝不提交
+notes_export/
+output/
+
+# 备份文件
+*.zip
+*.bak
+*.ab
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# 系统
+.DS_Store
+Thumbs.db
