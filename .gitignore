@@ -1,5 +1,7 @@
 # 导出的个人笔记与附件，绝不提交
 notes_export/
+coloros_notes_export/
+coloros_import_backup/
 output/
 
 # 备份文件

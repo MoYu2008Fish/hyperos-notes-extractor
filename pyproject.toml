@@ -3,14 +3,14 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hyperos-notes-extractor"
-version = "0.1.0"
-description = "Export Xiaomi HyperOS / MIUI Notes to Markdown with images and voice recordings, via local backup. No root, no cloud."
+name = "notes-toolkit"
+version = "0.2.0"
+description = "Local toolkit to extract Xiaomi HyperOS / MIUI and ColorOS / realme notes to Markdown, and migrate HyperOS notes to ColorOS. No root, no cloud."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
-authors = [{ name = "MoYu2008Fish" }]
-keywords = ["xiaomi", "hyperos", "miui", "notes", "markdown", "backup", "export"]
+authors = [{ name = "notes-toolkit contributors" }]
+keywords = ["xiaomi", "hyperos", "miui", "coloros", "realme", "notes", "markdown", "backup", "migration"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Console",
@@ -22,12 +22,10 @@ classifiers = [
 ]
 dependencies = []
 
-[project.urls]
-Homepage = "https://github.com/MoYu2008Fish/hyperos-notes-extractor"
-Issues = "https://github.com/MoYu2008Fish/hyperos-notes-extractor/issues"
-
 [project.scripts]
 hyperos-notes = "hyperos_notes_extract:main"
+coloros-notes = "coloros_notes_extract:main"
+hyperos-to-coloros = "hyperos_to_coloros_import:main"
 
 [tool.setuptools]
-py-modules = ["hyperos_notes_extract"]
+py-modules = ["hyperos_notes_extract", "coloros_notes_extract", "hyperos_to_coloros_import"]

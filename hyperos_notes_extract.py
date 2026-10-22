@@ -37,7 +37,7 @@ import zipfile
 import zlib
 from html.parser import HTMLParser
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 # ---------------------------------------------------------------- protobuf
 
@@ -685,7 +685,7 @@ def main():
             "  取消所有已勾选分类，只勾选「其他系统应用数据 → 笔记」\n"
             "  点「立即备份」，并在进度页确认队列里只有「笔记」\n"
             "\n"
-            "更多说明: https://github.com/MoYu2008Fish/hyperos-notes-extractor\n"
+            "更多说明见 README\n"
         ),
     )
     ap.add_argument("-V", "--version", action="version", version="%(prog)s " + __version__)
